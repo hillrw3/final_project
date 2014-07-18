@@ -94,6 +94,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   capybara
+  faraday
   gschool_database_connection
   pg (~> 0.17.1)
   rack-flash3
