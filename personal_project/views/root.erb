@@ -1,7 +1,10 @@
 <h1>Welcome to my app!</h1>
 
+
+
 <% params = { term: 'bar',limit: 1,}%>
 <% response = @client.search('Denver', params)%>
 <%json_response = response.to_json%>
 <%= JSON.parse(json_response)%>
+
 
