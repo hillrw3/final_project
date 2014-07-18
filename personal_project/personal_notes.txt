@@ -51,3 +51,11 @@ Standard return of a business from Yelp API:
     }
   }
 ]
+
+
+
+Example of Yelp API query:
+<% params = { term: 'bar',limit: 1,}%>
+<% response = @client.search('Denver', params)%>
+<%json_response = response.to_json%>
+<%= JSON.parse(json_response)%>
